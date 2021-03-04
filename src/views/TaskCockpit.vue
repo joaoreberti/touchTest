@@ -76,17 +76,15 @@ export default {
       event.preventDefault();
       console.log(event);
       this.reziseDrawer = true;
-      console.log(event.clientY);
-      console.log(window.innerHeight);
+      console.log(event.touches[0].clientY);
+      
 
-      this.drawerHeight = window.innerHeight - event.clientY;
+      this.drawerHeight = window.innerHeight - event.touches[0].clientY; 
       console.log("joao");
     },
     resetResizing: function (event) {
       event.preventDefault();
-      console.log(event.clientY);
-      console.log(window.innerHeight);
-      console.log("largar");
+   
     },
   },
 };
