@@ -13,6 +13,7 @@
       <template slot="prepend">
         <div
           id="draggableNotch"
+          ref="idealist"
           class="d-flex justify-center"
           @dragover="resetResizing"
           @drag="increaseHeight"
@@ -60,7 +61,11 @@ export default {
       }
     },
   },
-
+  mounted: function () {
+    this.$refs.idealist.addEventListener("touchmove", this.increaseHeight, false);
+    this.$refs.idealist.addEventListener("touchstart", this.increaseHeight, false);
+    this.$refs.idealist.addEventListener("touchend", this.resetResizing, false);
+  },
   watch: {
     group() {
       this.drawer = false;
