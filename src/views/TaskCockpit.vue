@@ -4,10 +4,11 @@
   <v-app>
     <v-navigation-drawer
       :height="dynamicDrawerHeight"
-      temporary
+      per
       right
       bottom
       app
+      color="red"
       v-model="showNavigationDrawer"
     >
       <template slot="prepend">
