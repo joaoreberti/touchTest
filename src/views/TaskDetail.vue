@@ -1,5 +1,7 @@
 <template>
-  
+  <task-item props="tasks">
+      <print- ></print->
+  </task-item>
 </template>
 
 <script>
