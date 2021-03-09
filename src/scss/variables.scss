@@ -21,7 +21,7 @@ $btn-sizes: (
 
 $headings: (
   'h1': (
-    'size': 10em,
+    'size': 1em,
     'line-height': 1.15em
   ),
   'h2': (
@@ -30,7 +30,7 @@ $headings: (
   )
 );
 
-$joao: #fff;
+$joao: red;
 $system-bar-padding: 10px;
 /* .v-navigation-drawer--bottom.v-navigation-drawer--is-mobile{
     background-color: black !important;

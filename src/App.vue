@@ -1,14 +1,20 @@
 <template>
     <v-app>
-      <sub-header prop>
-
-      </sub-header>
+        <p class="text-h1">joao</p>
         <v-main>
             <router-view></router-view>
         </v-main>
     </v-app>
 </template>
 
+<style lang="scss" scoped>
+
+    .text-h1{
+    color: $joao;
+
+    }
+
+</style>
 <script>
 export default {
     name: "App",
